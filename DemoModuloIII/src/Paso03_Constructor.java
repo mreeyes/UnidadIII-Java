@@ -1,8 +1,7 @@
 /**
- * PASO 3 - Diapositivas 4 a 9 (CONSTRUCTORES)
- * Observa en consola el mensaje ">> Se ejecutó el constructor"
+ *  Diapositivas 4 a 9 (CONSTRUCTORES)
  *
- * DEMO diapositiva 9: comenta el constructor vacío dentro de Estudiante.java
+ *  diapositiva 9: recordar comentar el constructor vacío dentro de Estudiante.java
  * y la línea de "new Estudiante()" de aquí abajo dará error de compilación.
  */
 public class Paso03_Constructor {
@@ -11,7 +10,7 @@ public class Paso03_Constructor {
         est1.mostrarInfo();
 
         System.out.println("---");
-        Estudiante est2 = new Estudiante();              // usa el constructor vacío
-        est2.mostrarInfo();                              // "Sin nombre", 0.0 (decidido por nosotros)
+        Estudiante est2 = new Estudiante();              // se esta usando el constructor vacío
+        est2.mostrarInfo();                              // "Sin nombre", 0.0 (decidido por mi)
     }
 }

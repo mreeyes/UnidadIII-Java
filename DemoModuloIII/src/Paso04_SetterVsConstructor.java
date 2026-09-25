@@ -1,11 +1,11 @@
 /**
- * PASO 4 - Setter vs constructor
+ *  Setter vs constructor
  * Dos formas de llegar al mismo resultado: una obliga a compilar con los
  * datos completos, la otra no.
  */
 public class Paso04_SetterVsConstructor {
     public static void main(String[] args) {
-        // Forma 1: nace vacío y luego se llena con un método
+        // Forma 1:
         Estudiante est1 = new Estudiante();
         est1.setNombre("Ana");            // trámite DESPUÉS de nacer
 

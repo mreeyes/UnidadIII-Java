@@ -1,19 +1,19 @@
 /**
- * PASO 6 (diapositivas 12 y 13): SOBRECARGA DE CONSTRUCTORES + this(...)
- * Los mensajes >> permiten ver en consola por dónde pasa cada new.
+ *  (diapositivas 12 y 13): SOBRECARGA DE CONSTRUCTORES + this(...)
+ *
  */
 public class Producto {
 
     private String nombre;
     private double precio;
 
-    // Constructor 1: sin datos -> delega al completo
+    // Constructor 1: sin datos delega al completo
     public Producto() {
         this("Sin nombre", 0.0);      // DEBE ser la primera línea
         System.out.println("   >> terminó Producto()");
     }
 
-    // Constructor 2: solo nombre -> delega al completo
+    // Constructor 2: solo nombre -y  delega al completo
     public Producto(String nombre) {
         this(nombre, 0.0);            // DEBE ser la primera línea
         System.out.println("   >> terminó Producto(String)");

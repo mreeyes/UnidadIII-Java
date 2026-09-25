@@ -1,6 +1,6 @@
 /**
- * PASO 6 - Diapositivas 12 y 13 (SOBRECARGA DE CONSTRUCTORES + this(...))
- * Sigue los mensajes ">>" en consola para ver el recorrido de cada new.
+ *  Diapositivas 12 y 13 (SOBRECARGA DE CONSTRUCTORES + this(...))
+ *
  */
 public class Paso06_SobrecargaConstructores {
     public static void main(String[] args) {
