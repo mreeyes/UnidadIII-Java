@@ -1,45 +1,35 @@
 /**
- * PASO 6 (diapositivas 12 y 13): SOBRECARGA DE CONSTRUCTORES + this(...)
- * Los mensajes >> permiten ver en consola por dónde pasa cada new.
+ *  (diapositivas 12 y 13): SOBRECARGA DE CONSTRUCTORES + this(...)
  */
 public class Producto {
 
     private String nombre;
     private double precio;
 
-    // Constructor 1: sin datos -> delega al completo
+    // Constructor 1: sin datos, este delega al completo
     public Producto() {
-        this("Sin nombre", 0.0);      // DEBE ser la primera línea
+        this("Sin nombre", 0.0);      // esta debe ser la primera línea(sino error)
         System.out.println("   >> terminó Producto()");
     }
 
-    // Constructor 2: solo nombre -> delega al completo
+    // Constructor 2: solo nombre, este delega al completo
     public Producto(String nombre) {
-        this(nombre, 0.0);            // DEBE ser la primera línea
+        this(nombre, 0.0);           // esta debe ser la primera línea
         System.out.println("   >> terminó Producto(String)");
     }
 
-    // Constructor 3: el COMPLETO. Es el único que asigna y valida.
+    // Constructor 3: el que esta completo. Es el único que va a asignar y validar.
     public Producto(String nombre, double precio) {
         System.out.println("   >> entró a Producto(String, double)");
         this.nombre = nombre;
         if (precio < 0) {
-            this.precio = 0;          // la validación vive en UN solo lugar
+            this.precio = 0;          // esta es la validación que vive en un solo lugar
         } else {
             this.precio = precio;
         }
     }
 
-    // ---------------------------------------------------------------
-    // DEMO regla de this(...): descomenta y verás el error de compilación
-    // porque this(...) no es la primera instrucción.
-    //
-    // public Producto(double precio) {
-    //     System.out.println("Hola");
-    //     this("Sin nombre", precio);
-    // }
-    // ---------------------------------------------------------------
-
+   //metodo que retorna los valores.
     public String getInfo() {
         return nombre + " - $" + precio;
     }

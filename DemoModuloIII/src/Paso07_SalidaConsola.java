@@ -1,6 +1,6 @@
 /**
- * PASO 7 - Diapositiva 18 (SALIDA EN CONSOLA)
- * print, println, \n y la trampa de la concatenación.
+ *  Diapositiva 18 (SALIDA EN CONSOLA)
+ * print, println, \n y la concatenación.
  */
 public class Paso07_SalidaConsola {
     public static void main(String[] args) {
@@ -14,8 +14,8 @@ public class Paso07_SalidaConsola {
 
         System.out.println("Línea 1\nLínea 2");   // \n también salta de línea
 
-        // Trampa de la concatenación: pregunta al grupo qué imprime cada línea
-        System.out.println("Suma: " + 2 + 3);     // Suma: 23
-        System.out.println("Suma: " + (2 + 3));   // Suma: 5
+        // ¿qué imprime cada línea?
+        System.out.println("Suma: " + 2 + 3);
+        System.out.println("Suma: " + (2 + 3));
     }
 }
